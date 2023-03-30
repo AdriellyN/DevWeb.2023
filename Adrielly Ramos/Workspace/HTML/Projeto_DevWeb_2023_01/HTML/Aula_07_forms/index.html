@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Formularios</title>
+</head>
+
+<body>
+        <!-- CRIAR O FORMULARIO -->
+        <form action="#">
+
+                <!-- ### TAG PARA ENTRADA DE INFORMAÇÕES ### -->
+                <!-- Campo nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" required="required"><br />
+
+                <!-- Campo idade -->
+                <label for="">Idade : </label>
+                <input type="number" required><br />
+
+                <!-- Campo nota -->
+                <label for="">Nota :</label>
+                <input type="number" required><br /><br><br>
+
+                <!-- ### INPUT PARA APROVADO, REPROVADO E RECUPERAÇÃO ### -->
+                <label for="">O aluno está:</label><br><br>
+
+                <!-- Aprovado -->
+                <input type="radio" name="status" id="Aprov">
+                <label for="Aprov">Aprovado</label><br>
+
+                <!-- Reprovado -->
+                <input type="radio" name="status" id="Reprov">
+                <label for="Reprov">Reprovado</label><br>
+
+                <!-- Recuperação -->
+                <input type="radio" name="status" id="Rec">
+                <label for="Rec">Recuperação</label><br>
+                <br><br>
+                <!-- ### CHECKBOX PARA EXERCICIOS CONCLUIDOS ### -->
+                <label for=""> Exercicios Concluídos</label><br><br>
+                <input type="checkbox">
+                <label for="">Exercicio 01</label><br>
+
+                <input type="checkbox">
+                <label for="">Exercicio 02</label><br>
+
+                <input type="checkbox">
+                <label for="">Exercicio 03</label><br>
+
+                <input type="checkbox">
+                <label for="">Exercicio 04</label><br>
+                <br>
+                <!-- ### RANGE ### Você gostou do curso -->
+                <label for="">Você gostou do curso?</label><br>
+                <label for="">SIM</label>
+                <input type="range">
+                <label for="">NÃO</label>
+                <br><br>
+                <!-- ### SELECT E DATALIST ### -->
+                <!-- SELECT - LISTA DE INSTITUIÇÕES -->
+                <label for="Lista1">Lista de instituições</label><br>
+                <select name="" id="Lista1">
+                        <option value="">IOS</option>
+                        <option value="">PROA</option>
+                        <option value="">Generation Brasil</option>
+                        <option value="">Recode</option>
+                </select>
+                <br><br>
+                <!-- ### DATALIST - LISTA DE COMIDA ### -->
+                <label for="">Lista de comida</label><br>
+
+                <input type="text" list="comida">
+
+                <datalist id="comida">
+                        <option value="Fígado"></option>
+                        <option value="Arroz"></option>
+                        <option value="Fogazza"></option>
+                        <option value="Feijao"></option>
+                        <option value="Abacate"></option>
+                </datalist>
+                <br><br>
+                <!-- ### CAMPO DE TEXTO PARA CHORAR ### -->
+                <label for="">Local para lamentações:</label><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Deixe aqui seu comentário"></textarea>
+
+                <!-- o placeholder pode ser usado dentro do input -->
+                <br><br>
+                <!-- ### TAG BOTÃO PARA ENVIAR O FORMULÁRIO ### -->
+                <br><input type="submit" value="Enviar">
+        </form>
+
+</body>

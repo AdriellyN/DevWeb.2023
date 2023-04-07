@@ -1,0 +1,42 @@
+@charset "utf-8";
+body {
+    background-color: #00000cbb;
+    color: #ffffff;
+    font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+    background-color: #000000;
+    color: #a30202;
+    line-height: 200%;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-shadow: 10px 5px 8px #5e5c5c;
+}
+h2 {
+    background-color: #141463;
+    line-height: 200%;
+    font-family: 'Quattrocento', serif;
+    text-align: center;
+}
+p {
+    font-size: 0.9em;
+    text-indent: 3em;
+    line-height: 150%;
+    background-color: rgba(51, 95, 216, 0.781);
+    font-style: italic;
+    font-weight: bold;
+}
+footer {
+    color:#7c7a7a;
+    font-size: 0.70em;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.cor_texto {
+    color: #f3fa95;
+    font-weight: bold;
+}
+
+span.fundo {
+    background-color: #011e44
+}

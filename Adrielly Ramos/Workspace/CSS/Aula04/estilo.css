@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(248, 240, 234);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+.corDeFundo{
+    background-color: aqua;
+}
+
+#CorDiferente{
+    background-color: purple;
+}
+
+#CorSecundaria{
+    background-color: pink;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 1px 1px 5px gray;
+}

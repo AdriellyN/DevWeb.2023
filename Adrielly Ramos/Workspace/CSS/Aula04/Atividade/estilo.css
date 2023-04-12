@@ -1,19 +1,36 @@
-body{
+@charset "utf-8";
+*{
     background-color: black;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    vertical-align: middle;
 }
-header{
-    font-size: bold;
-}
-
-h4{
-    font-family: 'Press Start 2P', cursive;
+body{
     text-align: center;
-    font-size: 3em;
-    text-shadow: 3px 3px 3px red;
 }
 .teste{
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    text-shadow: 2px 2px 3px gray;
+    border: 1px solid rgb(233, 86, 1);
+    text-align: center;
+}
+h4{
+    color: brown;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgb(53, 17, 0);
+}
+
+.color01{color: rgb(102, 2, 2);}
+.color02{color: rgb(134, 3, 3);}
+.color03{color: rgb(153, 3, 3);}
+.color04{color: rgb(212, 3, 3);}
+.color05{color: rgb(243, 3, 3);}
+.color06{color: rgb(255, 44, 44);}
+
+span{
+    font-size: small;
+    font-style: italic;
+}
+
+h2{
+    color: rgb(248, 73, 73);
 }

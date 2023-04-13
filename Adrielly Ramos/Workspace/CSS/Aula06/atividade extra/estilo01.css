@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+img{
+    height: 350px;
+    width: 350px;
+    margin: 15px;
+}
+
+.tema{
+    margin: 15px;
+}

@@ -16,7 +16,9 @@ body{
 h4{
     color: brown;
     font-weight: bold;
-    text-shadow: 3px 3px 3px rgb(53, 17, 0);
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px 2px rgb(105, 34, 2);
 }
 
 .color01{color: rgb(102, 2, 2);}
@@ -29,6 +31,7 @@ h4{
 span{
     font-size: small;
     font-style: italic;
+    color: rgb(199, 197, 197);
 }
 
 h2{

@@ -1,0 +1,70 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('o-que-e-paisagem.jpg');
+    background-size: cover;
+    background-position: middle;
+    background-repeat: repeat;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #e3e1f5;
+    line-height: 1.8em;
+}
+
+#sccp{
+    font-family: 'Tilt Prism', cursive;
+    background-color: rgba(59, 82, 82, 0.404);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 150%;
+    text-shadow: 5px 4px 5px rgba(46, 80, 80, 0.986);
+}
+
+#sccp .btn {
+    font-size: 20px;
+    text-decoration:underline;
+    color: #ffffff;
+    font-style: bold;
+    border: #ffffff 3px solid;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color:#3a029444 ;
+}
+
+article {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    border-bottom: #d476ff3f dashed;
+}
+
+img{
+    width: 60vw;
+}
+
+figcaption{
+    text-align: center;
+    font-family: Papyrus, fantasy;
+    font-size: 1.6rem;
+}
+
+#section-a {
+    padding: 0.6cm;
+    background: #a304ca33;
+    color: #fff;
+    text-align: center;
+    line-height: 0.8cm;
+    font-size: 0.8em;
+}
+
+footer{
+    font-size: 0.5em;
+    font-style: italic;
+    text-align: center;
+}

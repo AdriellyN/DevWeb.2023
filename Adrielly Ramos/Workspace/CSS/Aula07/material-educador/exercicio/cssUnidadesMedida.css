@@ -53,6 +53,9 @@ figcaption{
     font-family: Papyrus, fantasy;
     font-size: 1.6rem;
 }
+figure{
+    border: 1px solid #000;
+}
 
 #section-a {
     padding: 0.6cm;
@@ -60,7 +63,7 @@ figcaption{
     color: #fff;
     text-align: center;
     line-height: 0.8cm;
-    font-size: 0.8em;
+    font-size: 0.6cm;
 }
 
 footer{

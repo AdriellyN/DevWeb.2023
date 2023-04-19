@@ -1,23 +1,29 @@
-.um{
-
+*{
+    padding: 0px;
+    margin: 0px;
 }
 
-.dois{
-
+body{
+    width: 80%;
+    margin:auto;
+    padding: 30px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#id1{
-
+.divpai{
+    border: 2px solid #000;
+    height: 400px;
 }
 
-#id2{
-
+img{
+    height: 250px;
 }
 
-section{
-
+#imagem1{
+    float:left;
 }
 
-div{
-
+#imagem2{
+    float:right;
 }

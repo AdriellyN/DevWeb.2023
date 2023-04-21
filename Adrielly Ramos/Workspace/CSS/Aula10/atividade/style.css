@@ -20,7 +20,7 @@ body{
 .divpai{
     border: 1px solid #000;
     width: 95vw;
-    height: 70vh;    
+    height: 50vh;    
 }
 
 #imagem1{
@@ -33,9 +33,9 @@ body{
     padding: 0px 5px;
 }
 
-@media (max-width: 838px) {
-    .line {
-        float:inline-end ;
-        width: 100%;
+@media (max-width: 414px) {
+    .divpai {
+        width: auto;
+        height: auto;
     }
 } 

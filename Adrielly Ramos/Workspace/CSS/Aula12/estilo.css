@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+    /*grid-template-areas: "filho1 . filho2 ." "filho3 . filho4 .";*/ /*a cada par de (") eu crio uma linha*/
+    grid-gap: 40px 15px;
+    justify-items:center;
+    align-items: centergit;
+
+}
+/* grid e grid inline são visualmente semelhantes, a diferença é semântica e no funcionamento das demais propriedades aplicadas na página */
+/* grid-gap é o espaçamento entre linhas e colunas */
+/* justify-items alinha o conteúdo da célula horizontalmente */
+
+.item-1{
+    background-color: red;
+    border: 1px solid blue;
+    /* grid-area: filho1; */
+    width: 50px;
+    height: 50px;
+}
+
+.item-2{
+    background-color: yellow;
+    border: 1px solid purple;
+    /* grid-area: filho2; */
+    width: 50px;
+    height: 50px;
+}
+
+.item-3{
+    background-color: pink;
+    border: 1px solid aqua;
+    /* grid-area: filho3; */
+    width: 50px;
+    height: 50px;
+}
+
+.item-4{
+    background-color: green;
+    border: 1px solid rgb(255, 0, 221);
+    /* grid-area: filho4; */
+    width: 50px;
+    height: 50px;
+}
+

@@ -1,0 +1,63 @@
+@charset "utf-8";
+* {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: stretch;
+    align-items: stretch;
+    grid-gap: 1em;
+}
+
+.container div {
+    background: red;
+    padding: 1.5em;
+    border: 4px dashed #000;
+}
+.container div:nth-child(odd) {
+    background: rgb(7, 189, 250);
+}
+
+#um {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+#dois {
+    grid-column: 3 / 5;
+    grid-row: 1;
+}
+#tres {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    background: yellow;
+}
+#quatro {
+    grid-column: 1 / 5;
+    grid-row: 3;
+}
+#cinco {
+    grid-column: 2/4;
+    grid-row: 4;
+}
+#seis {
+    grid-column: 1/5;
+    grid-row: 5;
+    background: yellow;
+}
+#sete {
+    grid-column: 1/3;
+    grid-row: 6;
+}
+#oito {
+    grid-column: 3;
+    grid-row: 6;
+}
+#nove {
+    grid-column: 4;
+    grid-row: 6;
+    background: yellow;
+}

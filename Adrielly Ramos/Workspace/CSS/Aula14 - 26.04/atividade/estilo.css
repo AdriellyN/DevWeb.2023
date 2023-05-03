@@ -1,30 +1,91 @@
 @charset "utf-8";
 
-*{
+* {
     margin: 0;
     padding: 0 2rem;
     background-color: black;
-    color: white;
 }
 
 header {
+    background-image: url(saga.jpg);
     color: white;
+    display: flex;
     vertical-align: top;
-    align-items: center;    
+    align-items: stretch;
+    line-height: 15vh;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.575);
 }
 
-header img {
-    width: 800px;
-    height: 100px;
-}
-main {
-    margin: 10px;
-    background-color: bisque;
+h1 {
+    font-family: 'Castoro Titling', cursive;
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-.container{
-        max-width: 1100px;
-        margin: auto;
-        overflow: auto;
-        padding: 0 2rem;
+.container {
+    background-image: url(unnamed.jpg);
+    background-repeat: repeat;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    box-sizing: border-box;
+    background: aliceblue;
+    color: black;
+    padding: 1rem 0;
+}
+
+img {
+    height: 30vh;
+    vertical-align: middle;
+    background: none;
+}
+
+p {
+    background-color: aliceblue;
+    color: black;
+    line-height: 2rem;
+    text-justify: initial;
+}
+
+#sect3 {
+    display: grid;
+    grid-template-columns: repeat(2, 40vw);
+    grid-auto-rows: (150px, auto);
+    color: white;
+    font-weight: bold;
+    padding: 2em;
+    grid-gap: 0.8em;
+}
+
+.subitem1 {
+    float: right;
+}
+
+subitem2 {
+    float: left;
+}
+
+#sect3 img {
+    width: auto;
+}
+
+.btn {
+    background-color: #4d0000;
+    border: 2px dashed black;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+footer {
+    line-height: 4rem;
+    background-color: rgba(128, 128, 128, 0.651);
+    font-style: italic;
+    text-align: center;
 }

@@ -14,14 +14,25 @@ header {
     align-items: stretch;
     line-height: 15vh;
     border-bottom: 3px solid rgba(0, 0, 0, 0.575);
+    text-align: center;
 }
-
+strong{
+    background-color: aliceblue;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000;
+}
 h1 {
     font-family: 'Castoro Titling', cursive;
     flex: 2;
     background-color: rgba(255, 255, 255, 0);
 }
-
+h4{
+    background-color: aliceblue;
+    color: black;
+    line-height: 2rem;
+    text-justify: initial;
+}
 .container {
     background-image: url(unnamed.jpg);
     background-repeat: repeat;
@@ -51,22 +62,14 @@ p {
 
 #sect3 {
     display: grid;
-    grid-template-columns: repeat(2, 40vw);
-    grid-auto-rows: (150px, auto);
+    grid-template-columns: repeat(4, 20vw);
+    align-content: center;
+    grid-auto-rows: (50px, auto);
     color: white;
     font-weight: bold;
     padding: 2em;
     grid-gap: 0.8em;
 }
-
-.subitem1 {
-    float: right;
-}
-
-subitem2 {
-    float: left;
-}
-
 #sect3 img {
     width: auto;
 }

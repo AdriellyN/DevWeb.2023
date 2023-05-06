@@ -6,6 +6,14 @@
     background-color: black;
 }
 
+section {
+    display: flex;
+    box-sizing: border-box;
+    background: aliceblue;
+    color: black;
+    padding: 1rem 0;
+}
+
 header {
     background-image: url(saga.jpg);
     color: white;
@@ -16,39 +24,40 @@ header {
     border-bottom: 3px solid rgba(0, 0, 0, 0.575);
     text-align: center;
 }
-strong{
+
+strong {
     background-color: aliceblue;
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #000;
 }
+
 h1 {
     font-family: 'Castoro Titling', cursive;
     flex: 2;
     background-color: rgba(255, 255, 255, 0);
 }
-h4{
+
+h4 {
     background-color: aliceblue;
     color: black;
     line-height: 2rem;
     text-justify: initial;
 }
+
 .container {
     background-image: url(unnamed.jpg);
     background-repeat: repeat;
     margin: auto;
 }
 
-section {
-    display: flex;
-    box-sizing: border-box;
-    background: aliceblue;
-    color: black;
-    padding: 1rem 0;
+video {
+    width: 30vw;
+    vertical-align: middle;
+    background: none;
 }
-
 img {
-    height: 30vh;
+    width: 30vw;
     vertical-align: middle;
     background: none;
 }
@@ -59,21 +68,26 @@ p {
     line-height: 2rem;
     text-justify: initial;
 }
-
 #sect3 {
-    display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    align-content: center;
-    grid-auto-rows: (50px, auto);
-    color: white;
-    font-weight: bold;
-    padding: 2em;
-    grid-gap: 0.8em;
+    display: block;
+    align-items: center;
+    text-align: center;
 }
-#sect3 img {
+#cards {
+    display: grid;
+    background: rgb(141, 141, 141);
+    color: black;
+    padding: 1rem 0;
+    grid-template-columns: repeat(2, 40vw);
+    align-content:stretch ;
+    box-sizing: border-box;
+    font-weight: bold;
+    grid-gap: 1em;
+}
+#cards img {
+    height: 100px;
     width: auto;
 }
-
 .btn {
     background-color: #4d0000;
     border: 2px dashed black;
@@ -85,7 +99,18 @@ p {
     font-size: 18px;
     border-radius: 20px;
 }
-
+.subitem1 {
+    display: flex;
+    background: rgb(141, 141, 141);
+    box-sizing: border-box;
+    align-items:stretch;
+}
+.subitem2 {
+    display: flex;
+    background: aliceblue ;
+    box-sizing: border-box;
+    align-items: stretch;
+}
 footer {
     line-height: 4rem;
     background-color: rgba(128, 128, 128, 0.651);

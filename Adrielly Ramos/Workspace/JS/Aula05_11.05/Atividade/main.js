@@ -5,12 +5,14 @@ while (contador <= 50) {
     contador++;
 }
 
+
 console.clear()
-let i2 = 10;
-while (i2 >= 0) {
-    console.log(`Valor = ${i2}`);
-    i2--;
-}
+let numero = 10;
+do {
+    console.log(numero);
+    i--;
+} while (numero >= 0);
+
 
 console.clear()
 let i;

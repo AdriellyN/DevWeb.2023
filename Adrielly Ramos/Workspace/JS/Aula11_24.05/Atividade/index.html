@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meu Site</title>
+</head>
+
+<body>
+
+    <script>
+        // Criação do elemento h1 e atribuição do texto
+        const h1Element = document.createElement('h1');
+        h1Element.textContent = 'cadastro de usuário';
+
+        // Inserção do elemento h1 no início do body
+        const bodyElement = document.querySelector('body');
+        bodyElement.insertBefore(h1Element, bodyElement.firstChild);
+
+        // Alteração do título
+        const titleElement = document.querySelector('title');
+        titleElement.textContent = 'cadastro empresa Macron';
+    </script>
+
+</body>
+
+</html>

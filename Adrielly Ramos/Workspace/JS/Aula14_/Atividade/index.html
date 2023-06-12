@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Inscrição</title>
+</head>
+
+<body>
+    <h1>Formulário de Inscrição</h1>
+
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required /><br>
+
+        <label for="dataNasc">Data de Nascimento:</label>
+        <input type="date" id="dataNasc" required /><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required /><br>
+
+        <label for="item">Item:</label>
+        <input type="text" id="item" required /><br>
+
+        <button type="button" onclick="incluirInscrito()">Incluir</button>
+        <button type="button" onclick="excluirInscrito()">Excluir</button>
+    </form>
+
+    <ul id="listaInscritos"></ul>
+
+    <script>
+        function incluirInscrito() {
+            const nome = document.getElementById('nome').value;
+            const dataNasc = document.getElementById('dataNasc').value;
+            const email = document.getElementById('email').value;
+            const item = document.getElementById('item').value;
+
+            const dataAtual = new Date();
+            const dataNascimento = new Date(dataNasc);
+
+            if (dataAtual.getFullYear() - dataNascimento.getFullYear() < 18) {
+                alert('É necessário ser maior de 18 anos para se inscrever.');
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um e-mail válido.');
+                return;
+            }
+
+            const inscrito = {
+                nome: nome,
+                dataNasc: dataNasc,
+                email: email,
+                item: item
+            };
+
+            const listaInscritos = document.getElementById('listaInscritos');
+            const novoItem = document.createElement('li');
+            novoItem.textContent = `${inscrito.nome} - ${inscrito.dataNasc} - ${inscrito.email} - ${inscrito.item}`;
+            listaInscritos.appendChild(novoItem);
+
+            // Limpa os campos do formulário
+            document.getElementById('nome').value = '';
+            document.getElementById('dataNasc').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('item').value = '';
+        }
+
+        function excluirInscrito() {
+            const codigoItem = document.getElementById('item').value;
+
+            const listaInscritos = document.getElementById('listaInscritos');
+            const itens = listaInscritos.getElementsByTagName('li');
+
+            for (let i = 0; i < itens.length; i++) {
+                const item = itens[i];
+                if (item.textContent.includes(codigoItem)) {
+                    listaInscritos.removeChild(item);
+                    break;
+                }
+            }
+
+            // Limpa o campo do item
+            document.getElementById('item').value = '';
+        }
+    </script>
+</body>
+
+</html>

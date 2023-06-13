@@ -1,30 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade aula 13</title>
+    <title>Manipulação de Elementos</title>
+    <style>
+        .zebrado:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 id="titulo">Top 6</h1>
-    <ul id="bigs" class="list">
-        <li class="impar">Jimmy Hendrix</li>
-        <li class="par">Eric Clapton</li>
-        <li class="impar">Jimmy Page</li>
-        <li class="par">Keith Richards</li>
-        <li class="impar">Jeff Beck</li>
-        <li class="par">B.B. King</li>
+    <ul id="minhaLista" class="lista" name="lista1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
     </ul>
 
-    <a href="#" class="btn">Surpresa 01</a>
-    <a href="#" class="btn">Surpresa 02</a>
-    <a href="#" class="btn">Surpresa 03</a>
-    <a href="#" class="btn">Surpresa 04</a>
-    <a href="#" class="btn">Surpresa 05</a>
-    <a href="#" class="btn">Surpresa 06</a>
+    <button onclick="alterarBackgroundColor()">Alterar BackgroundColor</button>
+    <button onclick="alterarFontWeight()">Alterar FontWeight</button>
+    <button onclick="efeitoZebrado()">Criar efeito zebrado na lista</button>
+    <button onclick="incluirBorderBottom()">Incluir borderBottom</button>
+    <button onclick="removerElemento()">Remover elemento da lista</button>
+    <button onclick="recuperarElemento()">Recuperar elemento da lista</button>
 
-    <script src="main.js"></script>
+    <script>
+        function alterarBackgroundColor() {
+            const minhaLista = document.getElementById('minhaLista');
+            minhaLista.style.backgroundColor = 'yellow';
+        }
+
+        function alterarFontWeight() {
+            const listaItems = document.getElementsByClassName('lista');
+            for (let i = 0; i < listaItems.length; i++) {
+                listaItems[i].style.fontWeight = 'bold';
+            }
+        }
+
+        function efeitoZebrado() {
+            const listaItems = document.getElementsByTagName('li');
+            for (let i = 0; i < listaItems.length; i++) {
+                if (i % 2 === 0) {
+                    listaItems[i].style.backgroundColor = '#f2f2f2';
+                } else {
+                    listaItems[i].style.backgroundColor = 'white';
+                }
+            }
+        }
+
+        function incluirBorderBottom() {
+            const listaItems = document.getElementsByName('lista1');
+            for (let i = 0; i < listaItems.length; i++) {
+                listaItems[i].style.borderBottom = '1px solid black';
+            }
+        }
+
+        function removerElemento() {
+            const minhaLista = document.getElementById('minhaLista');
+            const primeiroItem = minhaLista.firstElementChild;
+            minhaLista.removeChild(primeiroItem);
+        }
+
+        function recuperarElemento() {
+            const minhaLista = document.getElementById('minhaLista');
+            const novoItem = document.createElement('li');
+            novoItem.textContent = 'Item recuperado';
+            minhaLista.insertBefore(novoItem, minhaLista.firstChild);
+        }
+    </script>
 </body>
+<<<<<<< HEAD
 </html> 
+=======
+
+</html>
+>>>>>>> 3c159ee4aeedd434a17baffd57a5c2d434d4101c
